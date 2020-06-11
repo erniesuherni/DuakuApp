@@ -6,6 +6,10 @@ const styles = StyleSheet.create({
     
     title: {
         fontSize: 25
+    },
+    container:{
+        backgroundColor:'#000',
+        height: '100%'
     }
 })
 

@@ -1,7 +1,7 @@
 //import React form react
 import React from 'react';
-import { TouchableOpacity, Text, View, Image } from 'react-native';
-//import styles fro your PokeCard component.
+import { TouchableOpacity, Text, View } from 'react-native';
+
 import styles from './styles';
 
 

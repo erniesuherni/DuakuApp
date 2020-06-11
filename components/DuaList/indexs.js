@@ -7,6 +7,8 @@ import {  FlatList, ActivityIndicator } from 'react-native';
 //import styles for your component
 import styles from './styles';
 
+
+
 export default class DuaList extends PureComponent {
     //Define  state for your component. 
     state = {
@@ -21,17 +23,19 @@ export default class DuaList extends PureComponent {
     async componentDidMount() {
         //Have a try and catch block for catching errors.
         try {
-            //Assign the promise unresolved first then get the data using the json method. 
-            const duaApiCall = await fetch('./App.json');
-            const dua = await duaApiCall.json();
-            this.setState({ duaList: dua.results, loading: false });
+            fetch('./data.json').then(Response => {
+                console.log(Response);
+                return Response.json();
+            }).then(data => {
+                console.log(data);
+            })
         } catch (err) {
-            console.log("Error fetching data-----------", err);
+            console.log("Error fetching data", err);
         }
     }
   
     render() {
-        //Destruct pokeList and Loading from state.
+        //Destruct Dualist and Loading from state.
         const { duaList, loading } = this.state;
         const { navigation } = this.props;
         if(!loading) {

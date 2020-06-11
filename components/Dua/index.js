@@ -6,8 +6,10 @@ import styles from './styles';
 
 
 //Define your class component
-export default class Dua extends PureComponent {
-    c
+class Dua extends PureComponent {
+    static navigationOptions  = ({ navigation }) => ({
+        title: `${navigation.getParam('title')} Info`
+    })
     render() {
         //Destruct your navigation props (NOT SETUP YET!)
         const { navigation } = this.props;
@@ -16,9 +18,10 @@ export default class Dua extends PureComponent {
                
             {/*Use navigation.getParam to get the params of navigation prefered since you can set a default value
             therefore not returning undefined and not crashing your app. */}
-                <Text style={styles.title}>{navigation.getParam('title', 'Dua title')}</Text>
+                <Text style={styles.title}>{navigation.getParam('title')}</Text>
             </View>
         );
     }
     
 }
+export default Dua;

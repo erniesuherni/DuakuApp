@@ -1,34 +1,29 @@
+
 import React from 'react';
-import { Text, StyleSheet, ScrollView } from 'react-native';
-//import your components 
+//first import createStackNavigator from react-navigation
+//then import StackNavigator for creatign nested routes
+import { createStackNavigator } from 'react-navigation';
+//Import your screens 
 import DuaList from './components/DuaList';
+import Dua from './components/DuaList';
+import Home from './components/Home';
+
+
+//Define your routes using createStackNavigator, which will be a object full of options. 
+const RootStack = createStackNavigator({
+    //Define your screens.
+    Home: { screen: Home },
+    DuaList: { screen: DuaList },
+    Dua: {screen: Dua }
+  },
+  {
+    initialRouteName:  'Home'
+  })
+
+
 //Export default the stateless component 
 const App = () => {
-  return (
-    <ScrollView style={styles.container}>
-      <Text style={styles.duaListHeader}>Daily Dua</Text>
-    </ScrollView>
-  )
+  return <RootStack />
 }
 
 export default App;
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#000',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-  duaListHeader: {
-    fontSize: 20,
-    color: '#fff'
-  }
-});
