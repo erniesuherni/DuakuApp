@@ -12,7 +12,7 @@ import styles from './styles';
 export default class DuaList extends PureComponent {
     //Define  state for your component. 
     state = {
-        //Assing a array to your pokeList state
+        //Assing a array to dua state
         duaList: [],
         //Have a loading state where when data retrieve returns data. 
         loading: true
