@@ -4,7 +4,7 @@ import { View, Text, Button, Image } from 'react-native';
 import styles from './styles';
 
 class Home extends PureComponent {
-    //Have your navigationOptions in a form of a static method to have access to navigation prop.
+    //Have  navigationOptions in a form of a static method to have access to navigation prop.
     static navigationOptions = ({navigation}) => ({
         headerRight: (
             <Button 

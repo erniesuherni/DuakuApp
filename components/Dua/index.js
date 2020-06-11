@@ -19,6 +19,10 @@ class Dua extends PureComponent {
             {/*Use navigation.getParam to get the params of navigation prefered since you can set a default value
             therefore not returning undefined and not crashing your app. */}
                 <Text style={styles.title}>{navigation.getParam('title')}</Text>
+                <Text style={styles.title}>{navigation.getParam('desc')}</Text>
+                <Text style={styles.title}>{navigation.getParam('pronuntiation')}</Text>
+                <Text style={styles.title}>{navigation.getParam('translation')}</Text>
+                <Text style={styles.title}>{navigation.getParam('source')}</Text>
             </View>
         );
     }

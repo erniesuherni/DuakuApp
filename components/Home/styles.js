@@ -14,12 +14,7 @@ const styles = StyleSheet.create({
         //Have a backgroundColor of #000
         backgroundColor: '#000'
     },
-    homePageImage: {
-        //Have the image be 75% to render entire image width.
-        width: '75%',
-        //Have the image be 50% to render entire image height.
-        height: '50%',
-    },
+
     header: {
         //Define the size of the font.
         fontSize: 30,

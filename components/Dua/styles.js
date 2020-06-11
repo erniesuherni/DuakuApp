@@ -1,7 +1,7 @@
 //import StyleSheet from react-native to provide styling via a css abstraction
 import { StyleSheet } from 'react-native';
 
-//Define your styles 
+//Define  styles 
 const styles = StyleSheet.create({
     
     title: {
@@ -13,5 +13,5 @@ const styles = StyleSheet.create({
     }
 })
 
-//Export your styles
+//Export  styles
 export default styles;

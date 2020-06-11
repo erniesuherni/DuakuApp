@@ -5,7 +5,7 @@ import { TouchableOpacity, Text, View } from 'react-native';
 import styles from './styles';
 
 
-//Define your stateless componetns, and destrcuts props from function arguments
+//Define  stateless componetns, and destrcuts props from function arguments
 const DuaCard = ({name, navigation}) => {
     return (
         <TouchableOpacity style={{backgroundColor: 'transparent'}} onPress={() => navigation.navigate('Pokemon', {name})}>

@@ -9,7 +9,7 @@ import Dua from './components/DuaList';
 import Home from './components/Home';
 
 
-//Define your routes using createStackNavigator, which will be a object full of options. 
+//Define  routes using createStackNavigator, which will be a object full of options. 
 const RootStack = createStackNavigator({
     //Define your screens.
     Home: { screen: Home },

@@ -1,16 +1,18 @@
 //import PoreCompoent for preventing unnecesary updates. 
 import React, { PureComponent } from 'react';
-//import comopnents
+//import component
 import DuaCard from '../DuaCard';
-//import your components from react-native 
+//import  components from react-native 
 import {  FlatList, ActivityIndicator } from 'react-native';
-//import styles for your component
+//import styles for  component
 import styles from './styles';
+import data from './data.json';
+
 
 
 
 export default class DuaList extends PureComponent {
-    //Define  state for your component. 
+    //Define  state for  component. 
     state = {
         //Assing a array to dua state
         duaList: [],
